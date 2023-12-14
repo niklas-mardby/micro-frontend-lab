@@ -14,11 +14,12 @@
   "scripts": {
     "start:core-ui": "yarn workspace core-ui start",
     "start:app1": "yarn workspace app1 start",
-    "start:app2": "yarn workspace app2 start"
+    "start:app2": "yarn workspace app2 start",
+    "start": "yarn start:app1 && yarn start:app2 && yarn start:core-ui"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/asif-simform/micro-frontend.git"
+    "url": "git+https://github.com/niklas-mardby/micro-frontend-lab.git"
   },
   "keywords": [
     "react",
@@ -29,9 +30,9 @@
   "author": "Asif Vora",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/asif-simform/micro-frontend/issues"
+    "url": "https://github.com/niklas-mardby/micro-frontend-lab/issues"
   },
-  "homepage": "https://github.com/asif-simform/micro-frontend#readme",
+  "homepage": "https://github.com/niklas-mardby/micro-frontend-lab#readme",
   "devDependencies": {
     "@babel/core": "^7.22.15",
     "@babel/plugin-transform-runtime": "^7.22.15",

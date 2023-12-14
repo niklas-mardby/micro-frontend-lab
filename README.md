@@ -1,7 +1,7 @@
-<h1 align="center">A micro-frontend app ✨️</h1>
-<p align="center">Building Scalable and Modular Web Applications with Micro Frontends and Webpack Module Federation</p>
+<h1 align="center">A micro-frontend app experiment ✨️</h1>
 
 # Why?
+
 ### To scale with multiple teams in a micro services environment
 
 - More cohesive codebase
@@ -10,17 +10,15 @@
 - Simplify updates
 - Independent deploy
 
-# If you'd like more specifics, look into this article <a href="https://medium.com/p/ca3c6b9b3b23/edit/ ">Click here</a>
-
-
-# 📖  App architecture 
+# 📖 App architecture
 
 - packages
-    - core-ui
-    - app1
-    - app2
+  - core-ui
+  - app1
+  - app2
 
-# 💻 Built With  
+# 💻 Built With
+
 - [React](https://reactjs.org/)
 - [TypeScript](https://www.typescriptlang.org/)
 - [Webpack - module-federation](https://webpack.js.org/concepts/module-federation/#root)
@@ -28,32 +26,38 @@
 # 🛠️ Installation Steps
 
 ### Clone the repository ⎘
+
 ```bash
-git clone https://github.com/asif-simform/micro-frontend.git
+git clone https://github.com/niklas-mardby/micro-frontend-lab.git
 
 ```
 
 ### Change the working directory 📂
+
 ```bash
 cd micro-frontend
 ```
 
 ### Install dependency 🚚
+
 ```bash
 yarn
 ```
 
 ### Start core-ui app :rocket:
+
 ```bash
 yarn start:core-ui
 ```
 
 ### Start app1 :rocket:
+
 ```bash
 yarn start:app1
 ```
 
 ### Start app2 :rocket:
+
 ```bash
 yarn start:app2
 ```
@@ -68,8 +72,10 @@ yarn start:app2
 
 This project is licensed under the MIT License - see the [`LICENSE`](./LICENSE) file for details.
 
-# 👨‍💻 Author
+# 👨‍💻 Author of oridinal repo
+
 ### 👤 Asif Vora
+
 - Github: [@asifvora](https://github.com/asif-simform)
 - LinkedIn: [@asif-vora](https://www.linkedin.com/in/asif-vora/)
 - Twitter: [@007_dark_shadow](https://twitter.com/007_dark_shadow)
