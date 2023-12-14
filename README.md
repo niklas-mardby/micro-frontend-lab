@@ -62,21 +62,6 @@ yarn start:app1
 yarn start:app2
 ```
 
-# 🚀 Live demo
+# 👨‍💻 Author of original repo
 
-- core-ui app: https://mfe-core-ui.vercel.app/
-- app1: https://mfe-app1.vercel.app
-- app2: https://mfe-app2.vercel.app
-
-# 🛡️ License
-
-This project is licensed under the MIT License - see the [`LICENSE`](./LICENSE) file for details.
-
-# 👨‍💻 Author of oridinal repo
-
-### 👤 Asif Vora
-
-- Github: [@asifvora](https://github.com/asif-simform)
-- LinkedIn: [@asif-vora](https://www.linkedin.com/in/asif-vora/)
-- Twitter: [@007_dark_shadow](https://twitter.com/007_dark_shadow)
-- Instagram: [@007_dark_shadow](https://www.instagram.com/007_dark_shadow/)
+Asif Vora: [@asifvora](https://github.com/asif-simform)
