@@ -1,25 +1,31 @@
-import * as React from 'react';
+import * as React from "react";
 import ErrorBoundary from "./components/ErrorBoundry";
 
-// @ts-ignore
-const App1 = React.lazy(() => import("app1/App").catch(() => {
+const App1 = React.lazy(() =>
   // @ts-ignore
-  return import("./components/Fallback");
-}));
+  import("app1/App").catch(() => {
+    // @ts-ignore
+    return import("./components/Fallback");
+  })
+);
 
-// @ts-ignore
-const App2 = React.lazy(() => import("app2/App").catch(() => {
+const App2 = React.lazy(() =>
   // @ts-ignore
-  return import("./components/Fallback");
-}));
+  import("app2/App").catch(() => {
+    // @ts-ignore
+    return import("./components/Fallback");
+  })
+);
 
 interface AppProps {
-  title: string
+  title: string;
 }
 
 const App: React.FC<AppProps> = ({ title }) => (
   <div>
-    <h1><center>{title}</center></h1>
+    <h1>
+      <center>{title}</center>
+    </h1>
     <ErrorBoundary appName="App 1">
       <React.Suspense fallback="Loading App1">
         <App1 />
