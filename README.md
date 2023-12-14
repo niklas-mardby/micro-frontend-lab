@@ -1,4 +1,4 @@
-<h1 align="center">A micro-frontend app experiment ✨️</h1>
+<h1 align="center">🧪 A micro-frontend app experiment 🧪</h1>
 
 # Why?
 
