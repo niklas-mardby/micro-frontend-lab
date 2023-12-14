@@ -14,8 +14,7 @@
   "scripts": {
     "start:core-ui": "yarn workspace core-ui start",
     "start:app1": "yarn workspace app1 start",
-    "start:app2": "yarn workspace app2 start",
-    "start": "yarn start:app1 && yarn start:app2 && yarn start:core-ui"
+    "start:app2": "yarn workspace app2 start"
   },
   "repository": {
     "type": "git",
