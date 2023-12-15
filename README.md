@@ -50,16 +50,10 @@ yarn
 yarn start:core-ui
 ```
 
-### Start app1 :rocket:
+### Start appX :rocket:
 
 ```bash
-yarn start:app1
-```
-
-### Start app2 :rocket:
-
-```bash
-yarn start:app2
+yarn start:appX
 ```
 
 # 👨‍💻 Author of original repo

@@ -25,9 +25,9 @@ const App3 = React.lazy(() =>
   })
 );
 
-interface AppProps {
+type AppProps = {
   title: string;
-}
+};
 
 const App: React.FC<AppProps> = ({ title }) => (
   <div>
