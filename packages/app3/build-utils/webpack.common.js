@@ -1,9 +1,10 @@
 const path = require("path");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const { ModuleFederationPlugin } = require("webpack").container;
-const deps = require("../package.json").dependencies;
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 const HotModuleReplacementPlugin =
   require("webpack").HotModuleReplacementPlugin;
+const deps = require("../package.json").dependencies;
 
 module.exports = {
   entry: path.resolve(__dirname, "..", "./src/index.ts"),
@@ -28,17 +29,20 @@ module.exports = {
     new CleanWebpackPlugin(),
     new HotModuleReplacementPlugin(),
     new ModuleFederationPlugin({
-      name: "core_ui",
-      library: { type: "var", name: "core_ui" },
-      remotes: {
-        app1: "app1",
-        app2: "app2",
-        app3: "app3",
+      name: "app3",
+      library: { type: "var", name: "app3" },
+      filename: "remoteEntry.js",
+      exposes: {
+        "./App": "./src/App",
       },
       shared: {
         ...deps,
         react: {
           eager: true,
+          import: "react", // the "react" package will be used a provided and fallback module
+          shareKey: "react", // under this name the shared module will be placed in the share scope
+          shareScope: "legacy", // share scope with this name will be used
+          singleton: true, // only a single version of the shared module is allowed
         },
         "react-dom": {
           eager: true,
@@ -49,13 +53,17 @@ module.exports = {
         },
       },
     }),
+    new HtmlWebpackPlugin({
+      title: "App 3",
+      template: path.resolve(__dirname, "..", "./src/index.html"),
+    }),
   ],
   output: {
     path: path.resolve(__dirname, "..", "./dist"),
     filename: "bundle.js",
   },
   devServer: {
-    port: 3000,
+    port: 3003,
     static: path.resolve(__dirname, "..", "./dist"),
     hot: false,
     liveReload: true,

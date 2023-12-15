@@ -1,7 +1,7 @@
 {
-    "compilerOptions": {
-      "sourceMap": true,
-      "jsx": "react",
-      "target": "ES6"
-    }
+  "compilerOptions": {
+    "sourceMap": true,
+    "jsx": "react",
+    "target": "ES6"
+  }
 }
